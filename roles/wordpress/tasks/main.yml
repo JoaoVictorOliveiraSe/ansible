@@ -4,7 +4,6 @@
       pkg:
       - nginx
       - unzip
-      - php8.0-zip
       - php8.0-imagick
       - php8.0-curl
       - php8.0-fpm
