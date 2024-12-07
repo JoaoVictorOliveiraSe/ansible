@@ -24,7 +24,6 @@
     - php8.0-mysql
     - php8.0-common
     - php8.0-gd
-    - php8.0-json
     state: present
     update_cache: yes
 
