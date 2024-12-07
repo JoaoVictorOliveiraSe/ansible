@@ -38,6 +38,14 @@
     dest: /var/www/html
     remote_src: yes
 
+- name: Criando diretório de uploads ansible.
+  builtin.file: 
+    path: /var/www/html/wordpress/wp-content/uploads 
+    state: directory 
+    mode: '0775' 
+    owner: www-data 
+    group: www-data
+
 - name: alterando arquivo wp-config
   template:
     src: wp-config.php.j2
