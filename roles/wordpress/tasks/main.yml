@@ -1,9 +1,8 @@
 ---
 - name: configuraçao wordpress
-  apt:
-    update_cache: yes
-
-    tasks:
+  hosts: all
+  become: yes
+  tasks:
 
     - name: Adicionar repositório PPA do PHP
       apt_repository:
